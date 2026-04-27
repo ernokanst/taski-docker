@@ -144,7 +144,6 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo -i
             cd taski
             docker compose -f docker-compose.production.yml pull
             docker compose -f docker-compose.production.yml down
